@@ -1,0 +1,377 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Final Project- Part 1</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" /> 
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+<link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Give+You+Glory" rel="stylesheet">
+
+<style>
+#button1			{	font-family: 		'Archivo Black', sans-serif;
+						font-size: 			30px;
+						border:				none;
+						outline:			none;
+						background-color:	white;}
+
+#button1:hover		{	color: 				darkgray;}
+				
+#buttona			{	font-family: 		'Archivo Black', sans-serif;
+						font-size: 			20px;
+						border:				none;
+						outline:			none;
+						background-color:	white;}
+
+#buttona:hover		{	color: 				darkgray;}				
+				
+#slide_jelly		{	display: 			block;
+						height:				400px;
+						color: 				black;}
+				
+#button2			{	font-family: 		'Archivo Black', sans-serif;
+						font-size: 			30px;
+						border:				none;
+						outline:			none;
+						background-color:	white;}	
+
+#button2:hover		{	color: 				darkgray;}
+
+#buttonb			{	font-family: 		'Archivo Black', sans-serif;
+						font-size: 			20px;
+						border:				none;
+						outline:			none;
+						background-color:	white;}
+
+#buttonb:hover		{	color: 				darkgray;}					
+				
+#slide_jam			{	width:				290px;
+						height:				400px;
+						color: 				black;}
+								
+#button3			{	font-family: 		'Archivo Black', sans-serif;
+						font-size: 			30px;
+						border:				none;
+						outline:			none;
+						background-color:	white;}	
+				
+#button3:hover		{	color: 				darkgray;}		
+
+#buttonc			{	font-family: 		'Archivo Black', sans-serif;
+						font-size: 			20px;
+						border:				none;
+						outline:			none;
+						background-color:	white;}
+
+#buttonc:hover		{	color: 				darkgray;}			
+				
+#slide_preserves	{	width:				290px;
+						height:				400px;
+						color: 				black;}	
+
+#button4			{	font-family: 		'Archivo Black', sans-serif;
+						font-size: 			30px;
+						border:				none;
+						outline:			none;
+						background-color:	white;}
+				
+#button4:hover		{	color: 				darkgray;}	
+
+#buttond			{	font-family: 		'Archivo Black', sans-serif;
+						font-size: 			20px;
+						border:				none;
+						outline:			none;
+						background-color:	white;}
+
+#buttond:hover		{	color: 				darkgray;}				
+				
+#slide_marmalade	{	width:				290px;
+						height:				400px;
+						color: 				black;}	
+					
+#home:hover 		{	background-color: 	white;
+						color: 				black;}				
+
+#products:hover 	{	background-color: 	white;
+						color: 				black;}	
+						
+#about:hover 		{	background-color: 	white;
+						color: 				black;}	
+						
+#contact:hover 		{	background-color: 	white;
+						color: 				black;}	
+						
+.header_container	{	width:				1800px;
+						margin:				auto;}
+											
+#sticker 			{	position: 			absolute;
+						top: 				0px;
+						left: 				1000px;
+						right: 				0px;
+						width: 				300px;
+						height: 			300px;
+						border: 			none
+						background-color: 	none;}	
+						
+#sticker_button 	{	position: 			absolute;
+						top: 				0px;
+						left: 				1000px;
+						right: 				0px;
+						width: 				300px;
+						height: 			300px;
+						background-color: 	Transparent;
+						background-repeat:	no-repeat;
+						border: 			none;
+						cursor:				pointer;
+						overflow: 			hidden;
+						outline:			none;}
+						
+.mySlides 			{	display: 			none;}
+
+#first 				{	display: 			block;}
+
+img 				{	vertical-align: 	middle;}
+
+.slideshow-container {	max-width: 			1000px;
+						position: 			relative;
+						margin: 			auto;}
+
+.prev, .next 		{	cursor: 			pointer;
+						position: 			absolute;
+						top: 				50%;
+						width: 				auto;
+						padding: 			16px;
+						margin-top: 		-22px;
+						color: 				white;
+						font-weight: 		bold;
+						font-size: 			18px;
+						transition: 		0.6s ease;
+						border-radius: 		0 3px 3px 0;
+						user-select: 		none;}
+
+.next 				{	right: 				0;
+						border-radius: 		3px 0 0 3px;}
+
+
+.prev:hover, .next:hover {	background-color: 	rgba(0,0,0,0.8);}
+
+.numbertext 		{ 	color: 				#f2f2f2;
+						font-size: 			12px;
+						padding: 			8px 12px;
+						position: 			absolute;
+						top: 				0;}
+
+	
+.dot 				{	cursor: 			pointer;
+						height: 			15px;
+						width: 				15px;
+						margin: 			0 2px;
+						background-color: 	#bbb;
+						border-radius: 		50%;
+						display: 			inline-block;
+						transition: 		background-color 0.6s ease;}
+
+.active, .dot:hover {	background-color: 	#717171;}
+
+.fade 				{	-webkit-animation-name: 	fade;
+						-webkit-animation-duration: 1.5s;
+						animation-name: 			fade;
+						animation-duration: 		1.5s;}
+
+@-webkit-keyframes fade {	from {opacity: 	.4} to {opacity: 1}}
+
+@keyframes fade 	{	from {opacity: .4} to {opacity: 1}}
+
+
+
+</style>
+
+
+
+<script src="./library/prototype.js"></script>
+<script src="./library/scriptaculous.js"></script>
+
+<script type="text/javascript">
+
+function slideJelly() {
+	new Effect.SlideDown('slide_jelly');
+}
+
+function slideJam() {
+	new Effect.SlideDown('slide_jam');
+}
+
+function slidePreserves() {
+	new Effect.SlideDown('slide_preserves');
+}
+
+function slideMarmalade() {
+	new Effect.SlideDown('slide_marmalade');
+}
+
+function upJelly() {
+	new Effect.SlideUp('slide_jelly');
+}
+
+function upJam() {
+	new Effect.SlideUp('slide_jam');
+}
+
+function upPreserves() {
+	new Effect.SlideUp('slide_preserves');
+}
+
+function upMarmalade() {
+	new Effect.SlideUp('slide_marmalade');
+}
+
+function pulsateButton()	{
+	new Effect.Pulsate('sticker', { pulses: 4, duration: 2.0 });
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+</head>
+
+
+<body>
+<div id="wrapper">
+	<div id="header-wrapper" >
+		<div id="header" class="header_container"  style="position: relative;">
+			<div id="logo" style="border: solid white 2px; padding: 20px; margin-top: 20px;">
+				<h1 style="font-family: 'Homemade Apple', cursive; font-size: 120px;"><a href="#">That's My Jam</a></h1> 
+			</div>												
+		</div>
+	<div id="menu" class="container"  >
+			<ul style="font-family: 'Archivo Black', sans-serif; font-size: 40px;">
+				<li ><a href="#" id="home">Home</a></li>
+				<li ><a href="#" id="products">Products</a></li>
+				<li ><a href="#" id="about">About</a></li>
+				<li ><a href="#" id="contact">Contact</a></li>
+			</ul>
+	</div>		
+</div>
+	
+	<br>
+	
+<div class="slideshow-container" >
+			<img src="vegan3.png" id="sticker" style="position: absolute;">
+			<input id="sticker_button" type="button" value="" onclick="pulsateButton()">
+	<div id="first" class="mySlides fade">
+		<div class="numbertext">1 / 3</div>
+		<img src="pbj2a.jpg" style="width:100%">
+	</div>
+
+	<div class="mySlides fade">
+		<div class="numbertext">2 / 3</div>
+		<img src="jam3a.jpg" style="width:100%">
+	</div>
+
+	<div class="mySlides fade">
+		<div class="numbertext">3 / 3</div>
+		<img src="marm.jpg" style="width:100%">
+	</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<div id="portfolio-wrapper" >
+	<div id="portfolio" class="container" style="font-family: 'Archivo Black', sans-serif; font-size: 40px;">
+	<div id="column1" >
+				<div class="title">
+					<input id="button1" type="button" value="Jelly" onclick="slideJelly()">
+				</div>
+				<div  id="slide_jelly" style="display: none;">
+					<p  style="font-family: 'Give You Glory', cursive;  font-size: 30px;">Rose Geranium<br>Cinnamon Apple<br>Elderberry Grape<br><input id="buttona" type="button" value="Up" onclick="upJelly()"></p>
+				</div>
+	</div>					
+	<div id="column2">
+				<div class="title">
+					<input id="button2" type="button" value="Jam" onclick="slideJam()">
+				</div>
+				<div  id="slide_jam" style="display: none;">
+					<p style="font-family: 'Give You Glory', cursive; font-size: 30px;">Wild Chokecherry<br>Peach Nutmeg<br> Strawberry Rhubarb<br><input id="buttonb" type="button" value="Up" onclick="upJam()"></p>
+				</div>
+	</div>					
+	<div id="column3">
+				<div class="title">
+					<input id="button3" type="button" value="Preserves" onclick="slidePreserves()">
+				</div>
+				<div  id="slide_preserves" style="display: none;">				
+					<p style="font-family: 'Give You Glory', cursive; font-size: 30px;">Sour Cherry<br>Raspberry Hibiscus<br>Apple Pecan<br><input id="buttonc" type="button" value="Up" onclick="upPreserves()"> </p>
+				</div>
+	</div>
+	<div id="column4">
+				<div class="title">
+					<input id="button4" type="button" value="Marmalade" onclick="slideMarmalade()">
+				</div>
+				<div  id="slide_marmalade" style="display: none;">					
+					<p style="font-family: 'Give You Glory', cursive; font-size: 30px;">Key Lime<br>Sicillian Orange<br>Kumquat "Honey"<br><input id="buttond" type="button" value="Up" onclick="upMarmalade()"></p>
+				</div>
+	</div>
+</div>
+</div>	
+</div>
+
+<div id="footer" class="container"  >
+		<header class="title">
+			<h2 style="font-family: 'Homemade Apple', cursive; color: black;">Get in touch</h2>
+			 </header>
+		<ul class="contact">
+			<li><a href="#" class="icon icon-twitter"><span>Twitter</span></a></li>
+			<li><a href="#" class="icon icon-facebook"><span></span></a></li>
+			<li><a href="#" class="icon icon-dribbble"><span>Pinterest</span></a></li>
+			<li><a href="#" class="icon icon-tumblr"><span>Google+</span></a></li>
+			<li><a href="#" class="icon icon-rss"><span>Pinterest</span></a></li>
+		</ul>
+	</div>
+</div>
+
+</body>
+</html>
